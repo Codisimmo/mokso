@@ -1,0 +1,54 @@
+* {
+    // font-family: "Sofia Pro", sans-serif;
+}
+
+body {
+    // font-family: "Sofia Pro", sans-serif!important;
+    // color: $color-black;
+    // font-size: $font-size-18;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5 {}
+
+h1,
+.h1 {
+    // font-size: 60px;
+    // letter-spacing: 1.5px;
+    @media (max-width: 767px) {}
+}
+
+h2,
+.h2 {
+    // letter-spacing: 1.5px;
+    @media (max-width: 767px) {}
+}
+
+h3,
+.h3 {
+    @media (max-width: 767px) {
+        // font-size: 24px;
+    }
+}
+
+h4,
+.h4 {
+    @media (max-width: 767px) {
+        // font-size: 20px;
+    }
+}
+
+h5,
+.h5 {
+    @media (max-width: 767px) {
+        // font-size: 16px;
+    }
+}
