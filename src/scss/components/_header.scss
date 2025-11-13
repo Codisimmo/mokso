@@ -107,6 +107,7 @@ form#formSearchForm {
     .js-header-info-bar.header-info-bar.has-cross.is-full-width,
     header#header {
       position: fixed;
+      top: 0 !important;
       left: 0;
       right: 0;
       z-index: 100;
