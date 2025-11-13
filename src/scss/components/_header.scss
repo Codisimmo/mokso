@@ -103,6 +103,15 @@ form#formSearchForm {
   }
 }
 @media (min-width: 768px) {
+  .scrolled {
+    .js-header-info-bar.header-info-bar.has-cross.is-full-width,
+    header#header {
+      position: fixed;
+      left: 0;
+      right: 0;
+      z-index: 100;
+    }
+  }
   input.query-input.form-control.search-input.js-search-input {
     height: 54px !important;
   }
