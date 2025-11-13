@@ -125,6 +125,7 @@ form#formSearchForm {
 
   header#header {
     border-bottom: 1px solid #dadada;
+    box-shadow: 0px 7px 6px rgba(0, 0, 0, 0.09);
   }
   .top-navigation-bar {
     display: none;
@@ -199,6 +200,13 @@ form#formSearchForm {
     position: relative;
     top: -4px;
   }
+  .header-top {
+    display: flex;
+    flex-wrap: wrap;
+    height: 89px;
+    padding-bottom: 9px;
+    padding-top: 19px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -224,9 +232,14 @@ form#formSearchForm {
     margin-right: 133px;
   }
   a.top-nav-button.top-nav-button-login.primary.login.toggle-window {
-    position: absolute !important;
-    top: -46px;
+    position: fixed !important;
+    top: 4px;
     right: 68px;
+  }
+  .scrolled-down {
+    a.top-nav-button.top-nav-button-login.primary.login.toggle-window {
+      top: -40px;
+    }
   }
   .responsive-tools [data-target="search"],
   .responsive-tools [data-target="search"]:hover {
