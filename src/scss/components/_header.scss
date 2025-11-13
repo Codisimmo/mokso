@@ -103,16 +103,19 @@ form#formSearchForm {
   }
 }
 @media (min-width: 768px) {
+  header#header ul.menu-level-3 {
+    display: none !important;
+  }
   .scrolled {
     .js-header-info-bar.header-info-bar.has-cross.is-full-width,
     header#header {
       position: fixed;
-      top: 0 !important;
+      top: 0px !important;
       left: 0;
       right: 0;
-      z-index: 100;
     }
   }
+
   input.query-input.form-control.search-input.js-search-input {
     height: 54px !important;
   }
@@ -126,6 +129,8 @@ form#formSearchForm {
   header#header {
     border-bottom: 1px solid #dadada;
     box-shadow: 0px 7px 6px rgba(0, 0, 0, 0.09);
+    z-index: 100;
+    position: relative;
   }
   .top-navigation-bar {
     display: none;
