@@ -116,9 +116,12 @@ form#formSearchForm {
     }
     header#header {
       position: fixed;
-      top: 30px !important;
+      top: 0px !important;
       left: 0;
       right: 0;
+    }
+    .header-info-bar-addon header#header {
+      top: 30px !important;
     }
   }
 
