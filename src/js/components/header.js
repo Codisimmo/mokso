@@ -7,4 +7,5 @@ function initHeader() {
     .prependTo(".navigation-buttons");
   $("a.top-nav-button.top-nav-button-account.secondary").clone().prependTo(" .navigation-buttons");
   $(".right-menu").appendTo("body.desktop .navigation-in.menu");
+  $(".right-menu").appendTo("body.mobile #navigation .navigation-in");
 }

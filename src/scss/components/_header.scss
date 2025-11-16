@@ -221,6 +221,10 @@ form#formSearchForm {
     padding-bottom: 9px;
     padding-top: 19px;
   }
+  .user-action-login.popup-widget.login-widget {
+    z-index: 10000;
+    top: 63px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -258,6 +262,13 @@ form#formSearchForm {
   .responsive-tools [data-target="search"],
   .responsive-tools [data-target="search"]:hover {
     color: black;
+  }
+  .right-menu {
+    display: block !important;
+  }
+
+  .cart-content input.query-input.form-control.search-input.js-search-input {
+    height: 36px !important;
   }
 }
 @media (max-width: 1199px) {
