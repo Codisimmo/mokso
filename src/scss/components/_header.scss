@@ -66,6 +66,11 @@ $border-radius-large: 50px;
     border-color: $border-color-hover !important;
   }
 }
+
+.ordering-process a.top-nav-button.top-nav-button-login.primary.login.toggle-window {
+  visibility: hidden;
+}
+
 form#formSearchForm {
   position: relative;
   &::before {

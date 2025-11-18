@@ -6,6 +6,23 @@ function initHeader() {
     .html('<span class="login-header">Můj účet</span><span class="text">Přihlásit se</span>')
     .prependTo(".navigation-buttons");
   $("a.top-nav-button.top-nav-button-account.secondary").clone().prependTo(" .navigation-buttons");
-  $(".right-menu").appendTo("body.desktop .navigation-in.menu");
-  $(".right-menu").appendTo("body.mobile #navigation .navigation-in");
+
+  const rightMenuElement = $(".right-menu");
+
+  if (rightMenuElement.length > 0) {
+    // Ulož .right-menu do session storage
+    const rightMenuHtml = rightMenuElement.html();
+    sessionStorage.setItem("rightMenuHtml", rightMenuHtml);
+
+    rightMenuElement.appendTo("body.desktop .navigation-in.menu");
+    rightMenuElement.appendTo("body.mobile #navigation .navigation-in");
+  } else {
+    // Pokud .right-menu neexistuje, vezmi si ho ze session storage
+    const storedHtml = sessionStorage.getItem("rightMenuHtml");
+    if (storedHtml) {
+      const rightMenuClone = $("<div class='right-menu'></div>").html(storedHtml);
+      rightMenuClone.appendTo("body.desktop .navigation-in.menu");
+      rightMenuClone.appendTo("body.mobile #navigation .navigation-in");
+    }
+  }
 }
