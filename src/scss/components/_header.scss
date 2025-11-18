@@ -233,6 +233,10 @@ form#formSearchForm {
   .cart-content input.query-input.form-control.search-input.js-search-input {
     height: 36px !important;
   }
+  div#cart-widget {
+    z-index: 111;
+    position: absolute;
+  }
 }
 @media (min-width: 992px) {
   .popup-widget.login-widget:before {
