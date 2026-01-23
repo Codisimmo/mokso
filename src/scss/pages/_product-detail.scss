@@ -1,3 +1,6 @@
 a.btn.btn-default.p-all {
   display: none;
 }
+li.shp-tab[data-testid="tabDiscussion"] {
+  display: none !important;
+}

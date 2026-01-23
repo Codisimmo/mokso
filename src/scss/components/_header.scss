@@ -34,8 +34,10 @@ $border-radius-large: 50px;
     border-color: $border-color-hover !important;
   }
 } // Login Button
-.navigation-buttons > a.top-nav-button.top-nav-button-account.secondary,
-.navigation-buttons a.top-nav-button.top-nav-button-login.primary.login.toggle-window {
+// .navigation-buttons > a.top-nav-button.top-nav-button-account.secondary,
+// .navigation-buttons,
+a.top-nav-button.top-nav-button-account,
+button.top-nav-button.top-nav-button-login.toggle-window {
   display: block;
   width: 120px;
   margin-right: 20px;
@@ -45,6 +47,7 @@ $border-radius-large: 50px;
   background-color: transparent;
   // border: 1px solid $border-color-light !important;
   position: relative;
+  top: 7px;
 
   span {
     color: $color-black;
@@ -57,8 +60,8 @@ $border-radius-large: 50px;
     position: absolute;
     width: $icon-size;
     height: $icon-size;
-    left: 14px;
-    top: 10px;
+    left: 8px;
+    top: 14px;
   }
 
   &:hover {
@@ -67,7 +70,11 @@ $border-radius-large: 50px;
   }
 }
 
-.ordering-process a.top-nav-button.top-nav-button-login.primary.login.toggle-window {
+a.top-nav-button.top-nav-button-account {
+  top: -1px;
+}
+
+.ordering-process button.top-nav-button.top-nav-button-login.toggle-window {
   visibility: hidden;
 }
 
@@ -248,7 +255,8 @@ form#formSearchForm {
 }
 
 @media (max-width: 767px) {
-  a.top-nav-button.top-nav-button-login.primary.login.toggle-window {
+  a.top-nav-button.top-nav-button-account,
+  button.top-nav-button.top-nav-button-login.toggle-window {
     width: unset !important;
     span.login-header {
       display: none;
@@ -269,13 +277,14 @@ form#formSearchForm {
   .responsive-tools > a[data-target="search"] {
     margin-right: 133px;
   }
-  a.top-nav-button.top-nav-button-login.primary.login.toggle-window {
+  a.top-nav-button.top-nav-button-account,
+  button.top-nav-button.top-nav-button-login.toggle-window {
     position: fixed !important;
     top: 4px;
     right: 68px;
   }
   .scrolled-down {
-    a.top-nav-button.top-nav-button-login.primary.login.toggle-window {
+    button.top-nav-button.top-nav-button-login.toggle-window {
       top: -40px;
     }
   }
@@ -285,6 +294,37 @@ form#formSearchForm {
   }
   .right-menu {
     display: block !important;
+  }
+
+  a.top-nav-button.top-nav-button-account {
+    span {
+      display: none;
+    }
+    &:before {
+      left: 18px;
+      top: 9px;
+    }
+  }
+  button.top-nav-button.top-nav-button-login.toggle-window {
+    span {
+      display: none;
+    }
+    &:before {
+      left: 18px;
+      top: 9px;
+    }
+  }
+
+  .scrolled-down {
+    button.top-nav-button.top-nav-button-login.toggle-window {
+      span {
+        display: none;
+      }
+      &:before {
+        left: 18px;
+        top: -20px;
+      }
+    }
   }
 }
 @media (max-width: 1199px) {

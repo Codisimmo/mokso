@@ -1,0 +1,8 @@
+.ordering-process .search {
+  display: none;
+}
+.row.empty-cart-boxes {
+  .col-md-6:has(.search) {
+    display: none;
+  }
+}

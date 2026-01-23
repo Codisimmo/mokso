@@ -1,11 +1,12 @@
 export default initHeader;
 
 function initHeader() {
-  $("a.top-nav-button.top-nav-button-login.primary.login.toggle-window")
+  $("button.top-nav-button.top-nav-button-login.toggle-window")
     .clone()
     .html('<span class="login-header">Můj účet</span><span class="text">Přihlásit se</span>')
-    .prependTo(".navigation-buttons");
-  $("a.top-nav-button.top-nav-button-account.secondary").clone().prependTo(" .navigation-buttons");
+    .prependTo(".desktop .navigation-buttons");
+
+  $("a.top-nav-button.top-nav-button-account").clone().prependTo(" .navigation-buttons");
 
   const rightMenuElement = $(".right-menu");
 

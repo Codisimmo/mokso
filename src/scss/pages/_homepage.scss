@@ -87,7 +87,7 @@
 .slick-prev {
   &:before {
     content: "\E90B";
-    color: #101010; 
+    color: #101010;
     background-color: white;
   }
 }
@@ -135,5 +135,16 @@ button.slick-prev.slick-arrow {
   .footer-banners.row.banner-wrapper.container {
     padding: 0;
     text-align: center;
+  }
+  .homepage-blog-wrapper {
+    .homepage-group-title.h4 {
+      margin-bottom: 0;
+    }
+    .content-wrapper.container .row > div {
+      margin-top: 0;
+    }
+    .slick-slide.slick-current.slick-active {
+      padding-top: 0 !important;
+    }
   }
 }
