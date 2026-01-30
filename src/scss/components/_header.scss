@@ -255,6 +255,11 @@ form#formSearchForm {
 }
 
 @media (max-width: 767px) {
+  .blog-wrapper .slick-list.draggable {
+    position: relative;
+    right: -9px;
+  }
+
   a.top-nav-button.top-nav-button-account,
   button.top-nav-button.top-nav-button-login.toggle-window {
     width: unset !important;
