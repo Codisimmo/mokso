@@ -10,3 +10,30 @@ li.shp-tab[data-testid="tabDiscussion"] {
 .social-buttons {
   display: none !important;
 }
+
+.product-benefits {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.product-benefits__item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.product-benefits__icon {
+  width: 18px;
+  height: 18px;
+  fill: #000;
+  flex: 0 0 auto;
+}
+
+.product-benefits__text {
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1;
+  color: #000;
+}
