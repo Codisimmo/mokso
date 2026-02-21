@@ -6,8 +6,25 @@ li.shp-tab[data-testid="tabDiscussion"] {
   display: none !important;
 }
 
-/* Schovat akční ikonky (tisk / dotaz / sdílet) */
-div.link-icons[data-testid="productDetailActionIcons"],
+/* Schovat akční ikonky (tisk / dotaz / sdílet) – vynuceně i pro Chrome */
+body.type-detail div.link-icons[data-testid="productDetailActionIcons"],
+body.type-detail .p-info-wrapper div.link-icons[data-testid="productDetailActionIcons"],
+body.type-detail .p-detail div.link-icons[data-testid="productDetailActionIcons"],
+div.link-icons[data-testid="productDetailActionIcons"] {
+  display: none !important;
+  visibility: hidden !important;
+  height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* pokud by se někde zobrazily jednotlivé linky */
+body.type-detail a.link-icon.print,
+body.type-detail a.link-icon.chat,
+body.type-detail a.link-icon.share {
+  display: none !important;
+}
+
 .social-buttons-wrapper,
 .social-buttons {
   display: none !important;
