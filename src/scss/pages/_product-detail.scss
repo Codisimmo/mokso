@@ -6,13 +6,10 @@ li.shp-tab[data-testid="tabDiscussion"] {
   display: none !important;
 }
 
-/* schovat ikonky/akce na detailu produktu (desktop + mobile) */
+/* Schovat akční ikonky (tisk / dotaz / sdílet) */
+div.link-icons[data-testid="productDetailActionIcons"],
 .social-buttons-wrapper,
-.social-buttons,
-.link-icons[data-testid="productDetailActionIcons"],
-.link-icons,
-.link-icons-wrapper,
-[data-testid="productDetailActionIcons"] {
+.social-buttons {
   display: none !important;
 }
 
