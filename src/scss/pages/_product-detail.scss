@@ -6,30 +6,34 @@ li.shp-tab[data-testid="tabDiscussion"] {
   display: none !important;
 }
 
-/* Schovat akční ikonky (tisk / dotaz / sdílet) – vynuceně i pro Chrome */
-body.type-detail div.link-icons[data-testid="productDetailActionIcons"],
-body.type-detail .p-info-wrapper div.link-icons[data-testid="productDetailActionIcons"],
-body.type-detail .p-detail div.link-icons[data-testid="productDetailActionIcons"],
-div.link-icons[data-testid="productDetailActionIcons"] {
-  display: none !important;
-  visibility: hidden !important;
-  height: 0 !important;
-  margin: 0 !important;
-  padding: 0 !important;
-}
-
-/* pokud by se někde zobrazily jednotlivé linky */
-body.type-detail a.link-icon.print,
-body.type-detail a.link-icon.chat,
-body.type-detail a.link-icon.share {
-  display: none !important;
-}
-
 .social-buttons-wrapper,
+.link-icons[data-testid="productDetailActionIcons"],
 .social-buttons {
   display: none !important;
 }
 
 .p-info-wrapper .benefitBanner.position--benefitProduct {
   margin-top: 12px;
+}
+
+/* Desktop: držet fotku + info vedle sebe (nepodlézt) */
+@media (min-width: 992px) {
+  .p-detail-inner .row {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .p-detail-inner .p-image-wrapper,
+  .p-detail-inner .p-info-wrapper {
+    flex: 0 0 50%;
+    max-width: 50%;
+    min-width: 0; /* důležité pro Chrome */
+  }
+}
+
+/* Benefit banner ať je pořád v pravém sloupci */
+@media (min-width: 992px) {
+  .p-info-wrapper .benefitBanner.position--benefitProduct {
+    width: 100%;
+  }
 }
