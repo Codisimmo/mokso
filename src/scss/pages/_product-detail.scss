@@ -1,13 +1,18 @@
 a.btn.btn-default.p-all {
   display: none;
 }
+
 li.shp-tab[data-testid="tabDiscussion"] {
   display: none !important;
 }
 
+/* schovat ikonky/akce na detailu produktu (desktop + mobile) */
 .social-buttons-wrapper,
+.social-buttons,
 .link-icons[data-testid="productDetailActionIcons"],
-.social-buttons {
+.link-icons,
+.link-icons-wrapper,
+[data-testid="productDetailActionIcons"] {
   display: none !important;
 }
 
