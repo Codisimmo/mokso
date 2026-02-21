@@ -4,3 +4,9 @@ a.btn.btn-default.p-all {
 li.shp-tab[data-testid="tabDiscussion"] {
   display: none !important;
 }
+
+.social-buttons-wrapper,
+.link-icons[data-testid="productDetailActionIcons"],
+.social-buttons {
+  display: none !important;
+}
