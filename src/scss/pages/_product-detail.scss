@@ -37,3 +37,7 @@ li.shp-tab[data-testid="tabDiscussion"] {
     width: 100%;
   }
 }
+/* Skrytí ikon na detailu produktu */
+.link-icons[data-testid="productDetailActionIcons"] {
+  display: none !important;
+}
