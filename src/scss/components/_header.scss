@@ -338,16 +338,22 @@ form#formSearchForm {
     display: none;
   }
 }
-/* Search input – final */
+/* Search input – default (bez svitu) */
 form#formSearchForm input.query-input.form-control.search-input.js-search-input{
+  border-style: solid !important;
   border-color:#1686c9 !important;
   border-width:2px !important;
   background-color:#ffffff !important;
+  box-shadow:none !important; /* důležité */
 }
 
 form#formSearchForm::before{
   color:#1686c9 !important;
 }
-form#formSearchForm input.query-input.form-control.search-input.js-search-input{
-  box-shadow:0 0 0 2px rgba(22,134,201,.15) !important;
+
+/* Svit jen po kliknutí / focus */
+form#formSearchForm input.query-input.form-control.search-input.js-search-input:focus,
+form#formSearchForm input.query-input.form-control.search-input.js-search-input:focus-visible{
+  outline:none !important;
+  box-shadow:0 0 0 3px rgba(22,134,201,.30) !important;
 }
