@@ -46,7 +46,6 @@ const debugImages = () => {
 // Init app
 window.addEventListener("DOMContentLoaded", () => {
   //   retinaImages();
-  initCustomScripts();
   initHeader();
   initFooter();
   initHomePage();
@@ -58,4 +57,5 @@ window.addEventListener("DOMContentLoaded", () => {
   initProduct();
   //   debugImages();
   initMap();
+  initCustomScripts();
 });
