@@ -1,6 +1,6 @@
 $top-nav-bg: #211f27;
 $border-color-light: #ffffff;
-$border-color-hover: #1686c9;
+$border-color-hover: #0f5885;
 $icon-size: 20px;
 $border-radius-small: 5px;
 $border-radius-medium: 20px;
@@ -338,13 +338,16 @@ form#formSearchForm {
     display: none;
   }
 }
-/* === TEST: search input obvious change === */
+/* Search input – final */
 form#formSearchForm input.query-input.form-control.search-input.js-search-input{
   border-color:#1686c9 !important;
-  border-width:3px !important;
-  background-color:#fff4b8 !important; /* výrazně žluté */
+  border-width:2px !important;
+  background-color:#ffffff !important;
 }
+
 form#formSearchForm::before{
   color:#1686c9 !important;
 }
-/* === end TEST === */
+form#formSearchForm input.query-input.form-control.search-input.js-search-input{
+  box-shadow:0 0 0 2px rgba(22,134,201,.15) !important;
+}
