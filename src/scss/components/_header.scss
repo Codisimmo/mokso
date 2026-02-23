@@ -93,7 +93,8 @@ form#formSearchForm {
     width: 32px;
     position: absolute;
     left: 24px;
-    top: 4px;
+    top: 50%;
+    transform: translateY(-50%);
   }
   input.query-input.form-control.search-input.js-search-input {
     box-sizing: border-box;
@@ -134,12 +135,6 @@ form#formSearchForm {
 
   input.query-input.form-control.search-input.js-search-input {
     height: 54px !important;
-  }
-  form#formSearchForm {
-    &::before {
-      left: 24px;
-      top: 10px !important;
-    }
   }
 
   header#header {
@@ -351,13 +346,6 @@ form#formSearchForm input.query-input.form-control.search-input.js-search-input:
 
 /* Search input – trochu nižší */
 form#formSearchForm input.query-input.form-control.search-input.js-search-input{
-  height: 48px !important;      /* bylo 54px na desktopu / 40px default */
-  line-height: 48px !important; /* ať je text vertikálně vycentrovaný */
-}
-
-/* Ikonka lupy – dorovnat na střed */
-@media (min-width: 768px){
-  form#formSearchForm::before{
-    top: 6px !important;  /* bylo 10px v tvém desktop media query */
-  }
+  height: 48px !important;
+  line-height: 48px !important;
 }
