@@ -353,3 +353,16 @@ form#formSearchForm input.query-input.form-control.search-input.js-search-input:
   outline:none !important;
   box-shadow:0 0 0 3px rgba(22,134,201,.50) !important;
 }
+
+/* Search input – trochu nižší */
+form#formSearchForm input.query-input.form-control.search-input.js-search-input{
+  height: 46px !important;      /* bylo 54px na desktopu / 40px default */
+  line-height: 46px !important; /* ať je text vertikálně vycentrovaný */
+}
+
+/* Ikonka lupy – dorovnat na střed */
+@media (min-width: 768px){
+  form#formSearchForm::before{
+    top: 6px !important;  /* bylo 10px v tvém desktop media query */
+  }
+}
