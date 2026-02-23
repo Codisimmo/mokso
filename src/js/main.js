@@ -8,7 +8,6 @@ import initCart from "./pages/cart.js";
 import initArticle from "./pages/article.js";
 import initRegistration from "./pages/registration.js";
 import initMap from "./components/map.js";
-import { initCustomScripts } from "./custom-scripts.js";
 
 console.log("Custom JS loadesw");
 
