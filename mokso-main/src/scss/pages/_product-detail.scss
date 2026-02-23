@@ -1,0 +1,43 @@
+a.btn.btn-default.p-all {
+  display: none;
+}
+
+li.shp-tab[data-testid="tabDiscussion"] {
+  display: none !important;
+}
+
+.social-buttons-wrapper,
+.link-icons[data-testid="productDetailActionIcons"],
+.social-buttons {
+  display: none !important;
+}
+
+.p-info-wrapper .benefitBanner.position--benefitProduct {
+  margin-top: 12px;
+}
+
+/* Desktop: držet fotku + info vedle sebe (nepodlézt) */
+@media (min-width: 992px) {
+  .p-detail-inner .row {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .p-detail-inner .p-image-wrapper,
+  .p-detail-inner .p-info-wrapper {
+    flex: 0 0 50%;
+    max-width: 50%;
+    min-width: 0; /* důležité pro Chrome */
+  }
+}
+
+/* Benefit banner ať je pořád v pravém sloupci */
+@media (min-width: 992px) {
+  .p-info-wrapper .benefitBanner.position--benefitProduct {
+    width: 100%;
+  }
+}
+/* Skrytí ikon na detailu produktu */
+.link-icons[data-testid="productDetailActionIcons"] {
+  display: none !important;
+}

@@ -1,0 +1,85 @@
+// Colors
+$color-black: #000;
+$color-white: #fff;
+$color-grey-light: #f6f6f6;
+$color-grey: #989898;
+$color-grey-dark: #313131;
+$color-grey-darker: #202124;
+$color-red: #9f4249;
+$color-red-hover: #930c16;
+$color-green: #508358;
+$color-beige: #faf8f5;
+$color-beige-dark: #f2f0ec;
+// Fonts
+$font-size-14: 14px;
+$font-size-16: 16px;
+$font-size-18: 18px;
+$font-size-20: 20px;
+$font-size-25: 25px;
+$font-size-30: 30px;
+$font-size-40: 40px;
+$font-size-46: 46px;
+$font-size-70: 70px;
+$font-size-80: 80px;
+$line-height-20: 20px;
+$line-height-24: 24px;
+$line-height-30: 30px;
+$line-height-38: 38px;
+$line-height-50: 50px;
+$line-height-56: 56px;
+$line-height-100: 100px;
+@font-face {
+    font-family: "Sofia Pro";
+    src: url("https://www.vinomarada.cz/user/documents/fonts/SofiaProLight.eot");
+    src: url("https://www.vinomarada.cz/user/documents/fonts/SofiaProLight.eot?#iefix") format("embedded-opentype"), url("https://www.vinomarada.cz/user/documents/fonts/SofiaProLight.woff2") format("woff2"), url("https://www.vinomarada.cz/user/documents/fonts/SofiaProLight.woff") format("woff"), url("https://www.vinomarada.cz/user/documents/fonts/SofiaProLight.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "icomoon";
+    src: url("https://www.vinomarada.cz/user/documents/fonts/icomoon.eot?7sknqx");
+    src: url("https://www.vinomarada.cz/user/documents/fonts/icomoon.eot?7sknqx#iefix") format("embedded-opentype"), url("https://www.vinomarada.cz/user/documents/fonts/icomoon.ttf?7sknqx") format("truetype"), url("https://www.vinomarada.cz/user/documents/fonts/icomoon.woff?7sknqx") format("woff"), url("https://www.vinomarada.cz/user/documents/fonts/icomoon.svg?7sknqx#icomoon") format("svg");
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: "icomoon" !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow:before {
+    content: "\e900";
+    color: #9f4249;
+}
+
+.icon-fb:before {
+    content: "\e901";
+    color: #fff;
+}
+
+.icon-ig:before {
+    content: "\e902";
+    color: #fff;
+}
+
+// Brekapoints
+$breakpoints: ( "sm": 576px,
+"md": 768px,
+"lg": 992px,
+"xl": 1200px,
+"xxl": 1400px,
+);

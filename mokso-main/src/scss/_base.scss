@@ -1,0 +1,51 @@
+/* Shoptet – globální úpravy */
+
+.menu a,
+.navigation a {
+  font-size: 1.1em !important;
+}
+
+header#header,
+header.site-header,
+.top-bar,
+.header-wrapper {
+  background-color: #fdfdfd !important;
+}
+
+/* Signature / footer */
+#signature,
+#signature .title,
+#signature .image {
+  display: none !important;
+}
+
+.footer-bottom #signature {
+  display: none !important;
+}
+
+.container.footer-bottom {
+  display: flex !important;
+  justify-content: center !important;
+  text-align: center !important;
+}
+
+.container.footer-bottom .copyright {
+  margin: 0 auto !important;
+  text-align: center !important;
+  width: 100%;
+}
+
+/* Obecné skryté prvky */
+.availability-label {
+  visibility: hidden !important;
+}
+
+.variant-list th {
+  color: #000 !important;
+}
+
+/* Pokud chceš skrýt social tlačítka všude */
+.social-buttons-wrapper,
+.social-buttons {
+  display: none !important;
+}

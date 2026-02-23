@@ -1,0 +1,49 @@
+on: push
+name: 🚀 Deploy website on push
+jobs:
+  web-deploy:
+    name: 🎉 Deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🚚 Get latest code
+        uses: actions/checkout@v4
+
+      # Odstraní všechny console.log z JS souborů kromě složky tools///
+      - name: Remove all console.log from JS files
+        run: find . -type f -name "*.js" -not -path "*/tools/*" -exec sed -i '/console.log/d' {} +
+
+      # Nastavení Node.js
+      - name: 🔧 Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: "20"
+
+      # Povolení Corepack a správné verze Yarn
+      - name: Enable Corepack and Yarn 3
+        run: |
+          corepack enable
+          corepack prepare yarn@3.6.1 --activate
+
+      # Instalace závislostí a build projektu
+      - name: 🔨 Build Project
+        run: |
+          yarn install
+          yarn esbuild src/js/main.js --bundle --outfile=dist/js/main.js --format=iife
+
+      # Kompilace SCSS souborů
+      - name: 🎨 Compile SCSS
+        run: |
+          npx sass src/scss/main.scss dist/css/main.css
+
+      - name: SFTP Upload
+        uses: Dylan700/sftp-upload-action@latest
+        with:
+          server: ftp.myshoptet.com
+          username: git_444591
+          password: ${{ secrets.SFTP_PASSWORD }}
+          port: 22
+          uploads: |
+            ./dist/ => eshopy/mokso/dist/
+          ignore: |
+            .gitd
+            node_modules
