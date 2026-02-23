@@ -341,14 +341,10 @@ form#formSearchForm {
 /* Search input – default (bez svitu) */
 form#formSearchForm input.query-input.form-control.search-input.js-search-input{
   border-style: solid !important;
-  border-color:#ffffff !important;
+  border-color:#6b7280 !important;
   border-width:1px !important;
-  background-color:#ffffff !important;
+  background-color:#b6bbc7 !important;
   box-shadow:none !important; /* důležité */
-}
-
-form#formSearchForm::before{
-  color:#1686c9 !important;
 }
 
 /* Svit jen po kliknutí / focus */
