@@ -343,7 +343,7 @@ form#formSearchForm input.query-input.form-control.search-input.js-search-input{
   border-style: solid !important;
   border-color:#6b7280 !important;
   border-width:1px !important;
-  background-color:#b6bbc7 !important;
+  background-color:#f0f0f0 !important;
   box-shadow:none !important; /* důležité */
 }
 
@@ -351,5 +351,5 @@ form#formSearchForm input.query-input.form-control.search-input.js-search-input{
 form#formSearchForm input.query-input.form-control.search-input.js-search-input:focus,
 form#formSearchForm input.query-input.form-control.search-input.js-search-input:focus-visible{
   outline:none !important;
-  box-shadow:0 0 0 3px rgba(22,134,201,.30) !important;
+  box-shadow:0 0 0 3px rgba(22,134,201,.50) !important;
 }
