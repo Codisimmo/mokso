@@ -63,11 +63,6 @@ button.top-nav-button.top-nav-button-login.toggle-window {
     left: 8px;
     top: 14px;
   }
-
-  &:hover {
-    background: $color-white;
-    border-color: $border-color-hover !important;
-  }
 }
 
 a.top-nav-button.top-nav-button-account {
@@ -341,9 +336,9 @@ form#formSearchForm {
 /* Search input – default (bez svitu) */
 form#formSearchForm input.query-input.form-control.search-input.js-search-input{
   border-style: solid !important;
-  border-color:#6b7280 !important;
+  border-color:#8791a3 !important;
   border-width:1px !important;
-  background-color:#f0f0f0 !important;
+  background-color:#f1f1f1 !important;
   box-shadow:none !important; /* důležité */
 }
 
@@ -356,8 +351,8 @@ form#formSearchForm input.query-input.form-control.search-input.js-search-input:
 
 /* Search input – trochu nižší */
 form#formSearchForm input.query-input.form-control.search-input.js-search-input{
-  height: 46px !important;      /* bylo 54px na desktopu / 40px default */
-  line-height: 46px !important; /* ať je text vertikálně vycentrovaný */
+  height: 48px !important;      /* bylo 54px na desktopu / 40px default */
+  line-height: 48px !important; /* ať je text vertikálně vycentrovaný */
 }
 
 /* Ikonka lupy – dorovnat na střed */
